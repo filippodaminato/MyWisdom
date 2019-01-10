@@ -3,3 +3,11 @@
 
 Application to carry out quizzes of different topics and difficulties. Use the Triva Crack API! 
 
+### API 
+```
+https://opentdb.com/api.php
+```
+- `amount` - Number of question (Integer)
+- `category` - The topics of the questions (Integer)
+- `difficulty` - The difficulty of the questions (Easy\Medium\Hard)
+- `type` - The type of the questions (Multiple\Boolean)
