@@ -3,7 +3,12 @@
 
 Application to carry out quizzes of different topics and difficulties. Use the Triva Crack API! 
 
-### API 
+### Trivia API 
+
+The Open Trivia Database provides a completely free JSON API for use in programming projects.
+
+- [TriviaApi](https://opentdb.com/api_config.php)
+
 ```
 https://opentdb.com/api.php
 ```
