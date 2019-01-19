@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB548BF921F070800083F897 /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB548BF821F070800083F897 /* GameStoryboard.storyboard */; };
+		DB548BFB21F070A20083F897 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548BFA21F070A20083F897 /* GameViewController.swift */; };
+		DB548BFE21F073320083F897 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548BFD21F073320083F897 /* RequestApi.swift */; };
+		DB548C0121F073B40083F897 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548C0021F073B40083F897 /* Question.swift */; };
 		DBF7423D21EA06570044F39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7423C21EA06570044F39B /* AppDelegate.swift */; };
 		DBF7423F21EA06570044F39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7423E21EA06570044F39B /* ViewController.swift */; };
 		DBF7424221EA06570044F39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7424021EA06570044F39B /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB548BF821F070800083F897 /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
+		DB548BFA21F070A20083F897 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DB548BFD21F073320083F897 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
+		DB548C0021F073B40083F897 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DBF7423921EA06570044F39B /* MyWisdomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWisdomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7423C21EA06570044F39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF7423E21EA06570044F39B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +82,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB548BF721F070580083F897 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				DB548BF821F070800083F897 /* GameStoryboard.storyboard */,
+				DB548BFA21F070A20083F897 /* GameViewController.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		DB548BFC21F073110083F897 /* StaticRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DB548BFD21F073320083F897 /* RequestApi.swift */,
+			);
+			path = StaticRequest;
+			sourceTree = "<group>";
+		};
+		DB548BFF21F0738D0083F897 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				DB548C0021F073B40083F897 /* Question.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
 		DBF7423021EA06570044F39B = {
 			isa = PBXGroup;
 			children = (
+				DB548BFF21F0738D0083F897 /* Question */,
+				DB548BFC21F073110083F897 /* StaticRequest */,
+				DB548BF721F070580083F897 /* GameView */,
 				DBF7423B21EA06570044F39B /* MyWisdomApp */,
 				DBF7425021EA06580044F39B /* MyWisdomAppTests */,
 				DBF7425B21EA06580044F39B /* MyWisdomAppUITests */,
@@ -232,6 +268,7 @@
 				DBF7424721EA06580044F39B /* LaunchScreen.storyboard in Resources */,
 				DBF7424421EA06580044F39B /* Assets.xcassets in Resources */,
 				DBF7424221EA06570044F39B /* Main.storyboard in Resources */,
+				DB548BF921F070800083F897 /* GameStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB548C0121F073B40083F897 /* Question.swift in Sources */,
 				DBF7423F21EA06570044F39B /* ViewController.swift in Sources */,
+				DB548BFB21F070A20083F897 /* GameViewController.swift in Sources */,
+				DB548BFE21F073320083F897 /* RequestApi.swift in Sources */,
 				DBF7423D21EA06570044F39B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
