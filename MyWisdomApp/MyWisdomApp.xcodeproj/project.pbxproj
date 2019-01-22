@@ -11,6 +11,8 @@
 		DB548BFB21F070A20083F897 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548BFA21F070A20083F897 /* GameViewController.swift */; };
 		DB548BFE21F073320083F897 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548BFD21F073320083F897 /* RequestApi.swift */; };
 		DB548C0121F073B40083F897 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548C0021F073B40083F897 /* Question.swift */; };
+		DBA459B521F724AB00E7C137 /* TravelingTypewriter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA459B421F7249200E7C137 /* TravelingTypewriter.ttf */; };
+		DBA459B721F7262900E7C137 /* Letters for Learners.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA459B621F7262500E7C137 /* Letters for Learners.ttf */; };
 		DBF7423D21EA06570044F39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7423C21EA06570044F39B /* AppDelegate.swift */; };
 		DBF7423F21EA06570044F39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7423E21EA06570044F39B /* ViewController.swift */; };
 		DBF7424221EA06570044F39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7424021EA06570044F39B /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		DB548BFA21F070A20083F897 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DB548BFD21F073320083F897 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
 		DB548C0021F073B40083F897 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DBA459B421F7249200E7C137 /* TravelingTypewriter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TravelingTypewriter.ttf; sourceTree = "<group>"; };
+		DBA459B621F7262500E7C137 /* Letters for Learners.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners.ttf"; sourceTree = "<group>"; };
 		DBF7423921EA06570044F39B /* MyWisdomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWisdomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7423C21EA06570044F39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF7423E21EA06570044F39B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
+		DBA459B321F7247400E7C137 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DBA459B621F7262500E7C137 /* Letters for Learners.ttf */,
+				DBA459B421F7249200E7C137 /* TravelingTypewriter.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		DBF7423021EA06570044F39B = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		DBF7423B21EA06570044F39B /* MyWisdomApp */ = {
 			isa = PBXGroup;
 			children = (
+				DBA459B321F7247400E7C137 /* fonts */,
 				DBF7423C21EA06570044F39B /* AppDelegate.swift */,
 				DBF7423E21EA06570044F39B /* ViewController.swift */,
 				DBF7424021EA06570044F39B /* Main.storyboard */,
@@ -266,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF7424721EA06580044F39B /* LaunchScreen.storyboard in Resources */,
+				DBA459B521F724AB00E7C137 /* TravelingTypewriter.ttf in Resources */,
 				DBF7424421EA06580044F39B /* Assets.xcassets in Resources */,
 				DBF7424221EA06570044F39B /* Main.storyboard in Resources */,
+				DBA459B721F7262900E7C137 /* Letters for Learners.ttf in Resources */,
 				DB548BF921F070800083F897 /* GameStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

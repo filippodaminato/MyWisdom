@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
 
     @IBOutlet weak var lblQuestionText: UILabel!
+    @IBOutlet weak var imgQuestion: UIImageView!
     @IBOutlet weak var btnAnsw1: UIButton!
     @IBOutlet weak var btnAnsw2: UIButton!
     @IBOutlet weak var btnAnsw3: UIButton!
@@ -21,7 +22,6 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         getRequest(type: "easy")
     }
@@ -51,7 +51,7 @@ class GameViewController: UIViewController {
     
     @IBAction func btnBack(_ sender: Any) {
         
-        
+        self.dismiss(animated: true)
     }
     
     func getRequest(type : String) {
@@ -78,7 +78,6 @@ class GameViewController: UIViewController {
     func displayQuestion(question:Question) {
         
         let answ = [question.incorrect_answers[0],question.incorrect_answers[1],question.incorrect_answers[2],question.correct_answer].shuffled()
-        
         btnAnsw1.setTitle(answ[0].htmlToString, for: .normal)
         btnAnsw2.setTitle(answ[1].htmlToString, for: .normal)
         btnAnsw3.setTitle(answ[2].htmlToString, for: .normal)
@@ -91,7 +90,7 @@ class GameViewController: UIViewController {
     //-------- ANIMATIONS FUNC ----------
     func prepareToAnimation(){
         lblQuestionText.center.y -= view.bounds.height
-        
+        imgQuestion.center.y -= view.bounds.height
         btnAnsw1.center.x -= view.bounds.width
         btnAnsw2.center.x -= view.bounds.width
         btnAnsw3.center.x -= view.bounds.width
@@ -108,6 +107,7 @@ class GameViewController: UIViewController {
     
     func animateAppear(){
         self.lblQuestionText.center.y += self.view.bounds.height
+        imgQuestion.center.y += self.view.bounds.height
         self.btnAnsw1.center.x += self.view.bounds.width
         self.btnAnsw2.center.x += self.view.bounds.width
         self.btnAnsw3.center.x += self.view.bounds.width
@@ -116,6 +116,7 @@ class GameViewController: UIViewController {
     
     func animateDisappear(){
         self.lblQuestionText.center.y -= self.view.bounds.height
+        imgQuestion.center.y -= self.view.bounds.height
         self.btnAnsw1.center.x += self.view.bounds.width
         self.btnAnsw2.center.x += self.view.bounds.width
         self.btnAnsw3.center.x += self.view.bounds.width

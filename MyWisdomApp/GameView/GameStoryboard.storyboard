@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3T-OS-lG4">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,64 +9,113 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Letters for Learners.ttf">
+            <string>LettersforLearners</string>
+        </array>
+        <array key="TravelingTypewriter.ttf">
+            <string>TravelingTypewriter</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="3ov-NE-sck">
             <objects>
                 <viewController id="g3T-OS-lG4" customClass="GameViewController" customModule="MyWisdomApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vhB-ge-75t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="9" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-00-OPT">
-                                <rect key="frame" x="46" y="81" width="283" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w6-dv-G8Y">
-                                <rect key="frame" x="109" y="454" width="157" height="76"/>
+                                <rect key="frame" x="39" y="578" width="300" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
+                                <state key="normal" title="Button" backgroundImage="btnAnsw">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnAnswerAction:" destination="g3T-OS-lG4" eventType="touchUpInside" id="MIa-VD-3YK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAI-yt-pj8">
-                                <rect key="frame" x="109" y="359" width="157" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btnAnswerAction:" destination="g3T-OS-lG4" eventType="touchUpInside" id="i3G-rh-gsq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-hP-oiu">
-                                <rect key="frame" x="109" y="571" width="157" height="76"/>
+                                <rect key="frame" x="38" y="656" width="302" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
+                                <state key="normal" title="Button" backgroundImage="btnAnsw">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnAnswerAction:" destination="g3T-OS-lG4" eventType="touchUpInside" id="9P3-9v-JNO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Io-Bi-wnc">
-                                <rect key="frame" x="27" y="43" width="34" height="30"/>
+                                <rect key="frame" x="27" y="748" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="btnBack:" destination="g3T-OS-lG4" eventType="touchUpInside" id="fFX-DS-mgj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-cz-C70">
-                                <rect key="frame" x="109" y="266" width="157" height="73"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAI-yt-pj8">
+                                <rect key="frame" x="37" y="497" width="302" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
+                                <state key="normal" title="Button" backgroundImage="btnAnsw">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAnswerAction:" destination="g3T-OS-lG4" eventType="touchUpInside" id="i3G-rh-gsq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-cz-C70">
+                                <rect key="frame" x="38" y="411" width="302" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
+                                <state key="normal" title="Button" backgroundImage="btnAnsw">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnAnswerAction:" destination="g3T-OS-lG4" eventType="touchUpInside" id="XWA-HZ-BXo"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tvScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Z8b-7s-VIQ">
+                                <rect key="frame" x="7.6666666666666572" y="45.666666666666657" width="360" height="249.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2CZ-uo-WZ4"/>
+                                    <constraint firstAttribute="width" constant="360" id="hRs-KV-tw2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsz-vY-XaZ">
+                                <rect key="frame" x="66" y="319" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhQ-tN-xaq">
+                                <rect key="frame" x="261" y="319" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="9" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-00-OPT">
+                                <rect key="frame" x="27" y="62" width="313" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TravelingTypewriter" family="Traveling _Typewriter" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.77698828129695319" blue="0.15469784212774296" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Z8b-7s-VIQ" firstAttribute="centerX" secondItem="vhB-ge-75t" secondAttribute="centerX" id="MZ6-KG-HAE"/>
+                            <constraint firstItem="Z8b-7s-VIQ" firstAttribute="centerY" secondItem="vhB-ge-75t" secondAttribute="centerY" multiplier="0.42" id="w1w-sA-Xrn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w7N-LT-upu"/>
                     </view>
                     <connections>
@@ -74,12 +123,17 @@
                         <outlet property="btnAnsw2" destination="TAI-yt-pj8" id="Cps-1w-U8q"/>
                         <outlet property="btnAnsw3" destination="7w6-dv-G8Y" id="a2d-Z9-xME"/>
                         <outlet property="btnAnsw4" destination="xO3-hP-oiu" id="wzJ-NG-auS"/>
+                        <outlet property="imgQuestion" destination="Z8b-7s-VIQ" id="4R6-oc-DCN"/>
                         <outlet property="lblQuestionText" destination="b3R-00-OPT" id="STg-k2-CI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLZ-u0-nnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="168.6656671664168"/>
+            <point key="canvasLocation" x="53.600000000000001" y="168.4729064039409"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnAnsw" width="1411" height="211"/>
+        <image name="tvScreen" width="1192" height="986"/>
+    </resources>
 </document>
