@@ -25,6 +25,8 @@ class RequestApi {
             
             res = try? JSONDecoder().decode(Response.self, from: data)
             
+            
+            
             }.resume()
         
         return res?.results[0];

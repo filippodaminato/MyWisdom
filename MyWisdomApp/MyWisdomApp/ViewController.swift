@@ -33,7 +33,6 @@ class ViewController: UIViewController {
             }
             
             res = try? JSONDecoder().decode(Response.self, from: data)
-            print(res?.results[0]);
             }.resume()
         
         

@@ -24,17 +24,12 @@ class Question : Decodable{
     var incorrect_answers : [String]
     
     
-//    init(json : [String : Any]) {
-//
-//        self.category = json["category"] as! String
-//        self.question = json["question"] as! String
-//        self.answers = json["incorrect_answers"] as! Array<String>
-//        self.correct = json["correct_answer"] as! String
-//        // add the correct answer to the array of answers
-//        answers.append(json["correct_answer"] as! String)
-//
-//    }
-    
-    // passing the answers get true or false if the answ was correct or not
+    func isCorrect(answer: String) -> Bool {
+        if(answer == correct_answer){
+            return true
+        }
+        
+        return false
+    }
     
 }

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "btnAnsw.png",
+      "filename" : "btnWrong.png",
       "scale" : "1x"
     },
     {
