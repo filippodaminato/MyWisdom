@@ -140,28 +140,35 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-Hi-Jrl">
-                                <rect key="frame" x="90" y="329" width="195" height="40.666666666666686"/>
+                                <rect key="frame" x="45" y="329" width="285" height="40.666666666666686"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelBtn" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-Zr-cZf">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="40.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="40.666666666666664"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6t-Fg-EGm">
-                                        <rect key="frame" x="20" y="5.0000000000000018" width="165" height="30.666666666666671"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="17"/>
-                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-9U-bZN">
+                                        <rect key="frame" x="70" y="19" width="205" height="2.6666666666666679"/>
+                                        <color key="progressTintColor" red="1" green="0.77698828129999997" blue="0.15469784210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHI-Sc-v6R">
+                                        <rect key="frame" x="16.999999999999996" y="10.000000000000002" width="34.666666666666657" height="20.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.77698828129999997" blue="0.15469784210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="m6t-Fg-EGm" firstAttribute="leading" secondItem="Xee-Hi-Jrl" secondAttribute="leading" constant="20" id="DXg-XR-DXG"/>
-                                    <constraint firstAttribute="trailing" secondItem="m6t-Fg-EGm" secondAttribute="trailing" constant="10" id="JxV-G4-Fcm"/>
+                                    <constraint firstItem="uHI-Sc-v6R" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" constant="10" id="F34-gC-Qh2"/>
+                                    <constraint firstAttribute="trailing" secondItem="deQ-9U-bZN" secondAttribute="trailing" constant="10" id="Pu6-3K-9Js"/>
                                     <constraint firstAttribute="trailing" secondItem="lNI-Zr-cZf" secondAttribute="trailing" id="e5M-Wo-GU7"/>
-                                    <constraint firstAttribute="bottom" secondItem="m6t-Fg-EGm" secondAttribute="bottom" constant="5" id="mm8-sT-Z1F"/>
+                                    <constraint firstItem="deQ-9U-bZN" firstAttribute="centerY" secondItem="uHI-Sc-v6R" secondAttribute="centerY" id="epw-a0-3iV"/>
+                                    <constraint firstItem="deQ-9U-bZN" firstAttribute="leading" secondItem="Xee-Hi-Jrl" secondAttribute="leading" constant="70" id="ikT-qU-6bf"/>
+                                    <constraint firstItem="uHI-Sc-v6R" firstAttribute="leading" secondItem="Xee-Hi-Jrl" secondAttribute="leading" constant="17" id="iod-1V-SHT"/>
                                     <constraint firstAttribute="bottom" secondItem="lNI-Zr-cZf" secondAttribute="bottom" id="rwn-Mc-apu"/>
                                     <constraint firstItem="lNI-Zr-cZf" firstAttribute="leading" secondItem="Xee-Hi-Jrl" secondAttribute="leading" id="wm6-ry-wsq"/>
                                     <constraint firstItem="lNI-Zr-cZf" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" id="xFy-4Y-cVZ"/>
-                                    <constraint firstItem="m6t-Fg-EGm" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" constant="5" id="xtw-9j-XIG"/>
+                                    <constraint firstItem="deQ-9U-bZN" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" constant="19" id="yxA-jb-UgW"/>
+                                    <constraint firstAttribute="bottom" secondItem="uHI-Sc-v6R" secondAttribute="bottom" constant="10" id="z3h-tz-3Eo"/>
                                 </constraints>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-IN-OU3">
@@ -189,8 +196,8 @@
                             <constraint firstItem="PDN-u7-xUZ" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="10" id="ZFT-2v-kPX"/>
                             <constraint firstItem="Xee-Hi-Jrl" firstAttribute="height" secondItem="vhB-ge-75t" secondAttribute="height" multiplier="0.05" id="hWh-RN-M0g"/>
                             <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="YV7-qe-my8" secondAttribute="trailing" constant="15" id="oC5-fD-pgX"/>
-                            <constraint firstItem="Xee-Hi-Jrl" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="90" id="pvS-tY-6O8"/>
-                            <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="Xee-Hi-Jrl" secondAttribute="trailing" constant="90" id="qkd-uc-md4"/>
+                            <constraint firstItem="Xee-Hi-Jrl" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="45" id="pvS-tY-6O8"/>
+                            <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="Xee-Hi-Jrl" secondAttribute="trailing" constant="45" id="qkd-uc-md4"/>
                             <constraint firstItem="8Io-Bi-wnc" firstAttribute="bottom" secondItem="w7N-LT-upu" secondAttribute="bottom" id="uxQ-u4-h4E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7N-LT-upu"/>
@@ -203,10 +210,11 @@
                         <outlet property="btnView" destination="YV7-qe-my8" id="WqR-kE-kcR"/>
                         <outlet property="imgQuestion" destination="Z8b-7s-VIQ" id="4R6-oc-DCN"/>
                         <outlet property="lblCategory" destination="fdl-a5-Jbi" id="JmC-ig-iWz"/>
-                        <outlet property="lblLevel" destination="m6t-Fg-EGm" id="cgA-IE-vlh"/>
+                        <outlet property="lblLevel" destination="uHI-Sc-v6R" id="nb4-Da-K6X"/>
                         <outlet property="lblQuestionText" destination="b3R-00-OPT" id="STg-k2-CI8"/>
                         <outlet property="lblType" destination="LgA-Yj-IAk" id="C9k-6u-MzR"/>
                         <outlet property="loadingView" destination="hQg-IN-OU3" id="8xw-dy-uyO"/>
+                        <outlet property="progressBar" destination="deQ-9U-bZN" id="ww9-Sj-HgO"/>
                         <outlet property="screenView" destination="PDN-u7-xUZ" id="nin-Ue-L3G"/>
                         <outletCollection property="imgScreenConst" destination="Ypy-DO-U6p" collectionClass="NSMutableArray" id="svZ-nO-XLG"/>
                         <outletCollection property="imgScreenConst" destination="3Mo-Ei-ZRh" collectionClass="NSMutableArray" id="34P-SA-5Lq"/>

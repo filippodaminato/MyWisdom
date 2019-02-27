@@ -14,9 +14,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var btnView: UIView!
     @IBOutlet weak var screenView: UIView!
     
+    @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var lblType: UILabel!
     @IBOutlet weak var lblCategory: UILabel!
-    @IBOutlet weak var lblLevel: UILabel!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var lblQuestionText: UILabel!
     @IBOutlet weak var imgQuestion: UIImageView!
@@ -24,20 +24,30 @@ class GameViewController: UIViewController {
     @IBOutlet weak var btnAnsw2: UIButton!
     @IBOutlet weak var btnAnsw3: UIButton!
     @IBOutlet weak var btnAnsw4: UIButton!
+    @IBOutlet weak var lblLevel: UILabel!
     
 
     @IBOutlet var imgScreenConst: [NSLayoutConstraint]!
     @IBOutlet var lblQuestionConst: [NSLayoutConstraint]!
     
     var currentQuestion:Question?
-    
+    var currentLevel = 1
     var btnAnsw : [UIButton] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentLevel = 1
+        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 6)
+        progressBar.progress = 0.2
+        progressBar.layer.cornerRadius = 25
+        progressBar.clipsToBounds = true
+        progressBar.layer.sublayers![1].cornerRadius = 25
+        progressBar.subviews[1].clipsToBounds = true
+        
         // Do any additional setup after loading the view.
         btnAnsw = [btnAnsw1,btnAnsw2,btnAnsw3,btnAnsw4]
+        lblLevel.text = "Level: "+String(currentLevel)
         getRequest(type: "easy")
     }
     
@@ -55,6 +65,8 @@ class GameViewController: UIViewController {
     @IBAction func btnAnswerAction(_ sender: UIButton) {
         
         self.displayCorrect(answ_get: sender.currentTitle!)
+        self.correctAnswer(asw: sender.currentTitle!)
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut,
                            animations: {
@@ -68,8 +80,7 @@ class GameViewController: UIViewController {
                 
             })
         }
-        
-       
+  
     }
     
     @IBAction func btnBack(_ sender: Any) {
@@ -89,7 +100,6 @@ class GameViewController: UIViewController {
             
             let res = try! JSONDecoder().decode(Response.self, from: data)
             
-            
             DispatchQueue.main.async {
                 self.resetCorrect()
                 self.btnView.isHidden = false
@@ -100,9 +110,8 @@ class GameViewController: UIViewController {
                     self.loadingView.isHidden = true
                     self.currentQuestion = res.results[0]
                     self.displayQuestion(question: res.results[0])
+                    print(self.currentQuestion?.correct_answer)
                 })
-                
-                
             }
             
             
@@ -112,7 +121,7 @@ class GameViewController: UIViewController {
     }
     
     func displayQuestion(question:Question) {
-        let answ = [question.incorrect_answers[0],question.incorrect_answers[1],question.incorrect_answers[2],question.correct_answer].shuffled()
+        let answ = [question.incorrect_answers[0],question.incorrect_answers[1],question.incorrect_answers[2],question.correct_answer].shuffled()//mischio domande
         lblCategory.text = question.category
         lblType.text = question.difficulty
         btnAnsw1.setTitle(answ[0].htmlToString, for: .normal)
@@ -123,9 +132,29 @@ class GameViewController: UIViewController {
         
     }
     
+    func correctAnswer(asw:String){
+        
+        if(asw == currentQuestion?.correct_answer.htmlToString){
+            
+            if(progressBar.progress == 1.0){
+                progressBar.progress = 0.2
+                currentLevel += 1
+                lblLevel.text = "Level: "+String(currentLevel)
+            }
+            else{
+                progressBar.progress += 0.2
+            }
+        }
+        else if(progressBar.progress > 0.2){
+                progressBar.progress -= 0.2
+        }
+        
+    }
+    
     func displayCorrect(answ_get:String){
         for x in btnAnsw{
             if(x.currentTitle == currentQuestion?.correct_answer.htmlToString){
+                
                 
                 x.setBackgroundImage(UIImage(named: "btnCorrect.png" ), for:  .normal)
             }
