@@ -40,9 +40,9 @@ class GameViewController: UIViewController {
         currentLevel = 1
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 6)
         progressBar.progress = 0.2
-        progressBar.layer.cornerRadius = 25
+        progressBar.layer.cornerRadius = 0
         progressBar.clipsToBounds = true
-        progressBar.layer.sublayers![1].cornerRadius = 25
+        progressBar.layer.sublayers![1].cornerRadius = 0
         progressBar.subviews[1].clipsToBounds = true
         
         // Do any additional setup after loading the view.
