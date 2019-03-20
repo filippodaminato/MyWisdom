@@ -48,7 +48,7 @@ class GameViewController: UIViewController {
         // Do any additional setup after loading the view.
         btnAnsw = [btnAnsw1,btnAnsw2,btnAnsw3,btnAnsw4]
         lblLevel.text = "Level: "+String(currentLevel)
-        getRequest(type: "easy")
+        getRequest()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -74,7 +74,7 @@ class GameViewController: UIViewController {
                             
             }, completion: { [weak self] finished in
                 
-                self!.getRequest(type: "easy")
+                self!.getRequest()
                 self?.btnView.isHidden = true
                 UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut, animations: { self?.resetAnimation() })
                 
@@ -87,8 +87,22 @@ class GameViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
-    func getRequest(type : String) {
-        let url = URL(string: "https://opentdb.com/api.php?amount=1&difficulty="+type+"&type=multiple")!
+    func getRequest() {
+        
+        var dif = "easy"
+        var category = ""
+        let defaults = UserDefaults.standard
+        if let res = defaults.string(forKey: defaultsKeys.difficult_key) {
+            dif = res.lowercased()
+        }
+        
+        if let cat = defaults.string(forKey: defaultsKeys.cateogry_key) {
+            category = cat
+        }
+        print(category)
+        print(dif)
+        print("https://opentdb.com/api.php?amount=1&category="+category+"&difficulty="+dif+"&type=multiple")
+        let url = URL(string: "https://opentdb.com/api.php?amount=1&category="+category+"&difficulty="+dif+"&type=multiple")!
         loadingView.isHidden = false
         URLSession.shared.dataTask(with: url) { data, response, error in
             

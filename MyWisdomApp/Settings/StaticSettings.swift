@@ -1,27 +1,18 @@
 //
-//  ViewController.swift
+//  StaticSettings.swift
 //  MyWisdomApp
 //
-//  Created by Filippo Daminato on 12/01/2019.
+//  Created by Filippo Daminato on 17/01/2019.
 //  Copyright © 2019 Filippo Daminato. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        getRequest(type: "asd")
-        
-        
-    }
+class StaticSettings {
+    static var url = URL(string: "https://opentdb.com/api.php?amount=1&difficulty=easy&type=multiple")!
     
-    var url = URL(string: "https://opentdb.com/api.php?amount=1&difficulty=easy&type=multiple")!
-    
-    func getRequest(type : String) {
+    static func getRequest(type : String) -> Question? {
         
         var res : Response?
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -33,10 +24,12 @@ class ViewController: UIViewController {
             }
             
             res = try? JSONDecoder().decode(Response.self, from: data)
+            
+            
+            
             }.resume()
         
+        return res?.results[0];
     }
-
-
+    
 }
-

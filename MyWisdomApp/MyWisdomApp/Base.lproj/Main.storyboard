@@ -56,6 +56,9 @@
                                     <constraint firstAttribute="height" constant="60" id="zv2-rU-g1B"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="opt"/>
+                                <connections>
+                                    <segue destination="Z5C-H5-xem" kind="show" id="fTR-tU-SuB"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ing" translatesAutoresizingMaskIntoConstraints="NO" id="36s-up-DMb">
                                 <rect key="frame" x="251" y="559" width="84" height="73"/>
@@ -94,7 +97,15 @@
                 <viewControllerPlaceholder storyboardName="GameStoryboard" id="djw-iq-NB5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mo2-Ra-lqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="26"/>
+            <point key="canvasLocation" x="716" y="340"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="rI9-Mh-1oC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="Z5C-H5-xem" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ny3-1l-4LZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="386"/>
         </scene>
     </scenes>
     <resources>

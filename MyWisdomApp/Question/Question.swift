@@ -28,8 +28,22 @@ class Question : Decodable{
         if(answer == correct_answer){
             return true
         }
-        
         return false
     }
     
 }
+
+class  CateogryResponse: Decodable {
+    var trivia_categories: [Category]
+}
+
+class Category: Decodable{
+    var id : Int
+    var name : String
+}
+
+struct defaultsKeys {
+    static let cateogry_key = "cateogry_key"
+    static let difficult_key = "difficult_key"
+}
+
