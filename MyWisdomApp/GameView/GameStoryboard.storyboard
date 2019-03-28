@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3T-OS-lG4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g3T-OS-lG4">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,23 +27,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Io-Bi-wnc">
-                                <rect key="frame" x="25" y="748" width="34" height="30"/>
+                                <rect key="frame" x="25" y="748" width="60" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Rfa-4c-PHR"/>
+                                    <constraint firstAttribute="width" constant="60" id="4Hk-Lr-Vrn"/>
+                                    <constraint firstAttribute="height" constant="25" id="Rfa-4c-PHR"/>
                                 </constraints>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" backgroundImage="back"/>
                                 <connections>
                                     <action selector="btnBack:" destination="g3T-OS-lG4" eventType="touchUpInside" id="fFX-DS-mgj"/>
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YV7-qe-my8">
-                                <rect key="frame" x="15" y="399.66666666666674" width="345" height="328.33333333333326"/>
+                                <rect key="frame" x="15" y="399.66666666666674" width="345" height="323.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tjA-Dt-EJb">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="328.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="323.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-cz-C70">
-                                                <rect key="frame" x="0.0" y="0.0" width="345" height="67"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="65.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
                                                 <state key="normal" title="Button" backgroundImage="btnAnswe">
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -54,7 +55,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAI-yt-pj8">
-                                                <rect key="frame" x="0.0" y="87" width="345" height="67"/>
+                                                <rect key="frame" x="0.0" y="85.666666666666629" width="345" height="66"/>
                                                 <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
                                                 <state key="normal" title="Button" backgroundImage="btnAnswe">
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -65,7 +66,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w6-dv-G8Y">
-                                                <rect key="frame" x="0.0" y="173.99999999999994" width="345" height="67.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="171.66666666666669" width="345" height="65.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
                                                 <state key="normal" title="Button" backgroundImage="btnAnswe">
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -76,7 +77,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-hP-oiu">
-                                                <rect key="frame" x="0.0" y="261.33333333333331" width="345" height="67"/>
+                                                <rect key="frame" x="0.0" y="257.33333333333331" width="345" height="66"/>
                                                 <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="30"/>
                                                 <state key="normal" title="Button" backgroundImage="btnAnswe">
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -110,13 +111,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="9" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdl-a5-Jbi">
-                                        <rect key="frame" x="19.999999999999996" y="20" width="42.666666666666657" height="19"/>
+                                        <rect key="frame" x="20" y="20" width="37" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TravelingTypewriter" family="Traveling _Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="9" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgA-Yj-IAk">
-                                        <rect key="frame" x="292.33333333333331" y="20" width="42.666666666666686" height="19"/>
+                                        <rect key="frame" x="298" y="20" width="37" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="TravelingTypewriter" family="Traveling _Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -146,11 +147,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="40.666666666666664"/>
                                     </imageView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-9U-bZN">
-                                        <rect key="frame" x="70" y="19" width="205" height="2.6666666666666679"/>
+                                        <rect key="frame" x="70" y="19.333333333333314" width="205" height="2"/>
                                         <color key="progressTintColor" red="1" green="0.77698828129999997" blue="0.15469784210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHI-Sc-v6R">
-                                        <rect key="frame" x="16.999999999999996" y="10.000000000000002" width="34.666666666666657" height="20.666666666666671"/>
+                                        <rect key="frame" x="17" y="10.000000000000002" width="49" height="20.666666666666671"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -167,21 +168,22 @@
                                     <constraint firstAttribute="bottom" secondItem="lNI-Zr-cZf" secondAttribute="bottom" id="rwn-Mc-apu"/>
                                     <constraint firstItem="lNI-Zr-cZf" firstAttribute="leading" secondItem="Xee-Hi-Jrl" secondAttribute="leading" id="wm6-ry-wsq"/>
                                     <constraint firstItem="lNI-Zr-cZf" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" id="xFy-4Y-cVZ"/>
-                                    <constraint firstItem="deQ-9U-bZN" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="top" constant="19" id="yxA-jb-UgW"/>
                                     <constraint firstAttribute="bottom" secondItem="uHI-Sc-v6R" secondAttribute="bottom" constant="10" id="z3h-tz-3Eo"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-IN-OU3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-IN-OU3">
+                                <rect key="frame" x="-10" y="-10" width="395" height="832"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-an-Bu7">
-                                        <rect key="frame" x="169" y="388" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-an-Bu7">
+                                        <rect key="frame" x="179" y="397.66666666666669" width="37" height="37"/>
                                         <color key="color" red="1" green="0.0" blue="0.04830961332" alpha="0.68989326579999999" colorSpace="custom" customColorSpace="displayP3"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zIc-an-Bu7" firstAttribute="centerY" secondItem="hQg-IN-OU3" secondAttribute="centerY" id="JAi-2D-aaS"/>
+                                    <constraint firstItem="zIc-an-Bu7" firstAttribute="centerX" secondItem="hQg-IN-OU3" secondAttribute="centerX" id="MZC-5I-Ww8"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.77698828129999997" blue="0.15469784210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -189,16 +191,20 @@
                             <constraint firstItem="PDN-u7-xUZ" firstAttribute="top" secondItem="w7N-LT-upu" secondAttribute="top" constant="5" id="3Mo-Ei-ZRh"/>
                             <constraint firstItem="8Io-Bi-wnc" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="25" id="9ya-0b-OHA"/>
                             <constraint firstItem="YV7-qe-my8" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="15" id="Ic2-61-CIO"/>
-                            <constraint firstItem="8Io-Bi-wnc" firstAttribute="top" secondItem="YV7-qe-my8" secondAttribute="bottom" constant="20" id="MgH-dl-kcJ"/>
+                            <constraint firstItem="8Io-Bi-wnc" firstAttribute="top" secondItem="YV7-qe-my8" secondAttribute="bottom" constant="25" id="MgH-dl-kcJ"/>
                             <constraint firstItem="Xee-Hi-Jrl" firstAttribute="top" secondItem="PDN-u7-xUZ" secondAttribute="bottom" constant="20" id="RE7-hZ-Tg9"/>
                             <constraint firstItem="YV7-qe-my8" firstAttribute="top" secondItem="Xee-Hi-Jrl" secondAttribute="bottom" constant="30" id="UPo-9h-w7B"/>
                             <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="PDN-u7-xUZ" secondAttribute="trailing" constant="10" id="Ypy-DO-U6p"/>
                             <constraint firstItem="PDN-u7-xUZ" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="10" id="ZFT-2v-kPX"/>
                             <constraint firstItem="Xee-Hi-Jrl" firstAttribute="height" secondItem="vhB-ge-75t" secondAttribute="height" multiplier="0.05" id="hWh-RN-M0g"/>
                             <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="YV7-qe-my8" secondAttribute="trailing" constant="15" id="oC5-fD-pgX"/>
+                            <constraint firstItem="hQg-IN-OU3" firstAttribute="top" secondItem="vhB-ge-75t" secondAttribute="top" constant="-10" id="oWh-Sx-qe9"/>
+                            <constraint firstItem="hQg-IN-OU3" firstAttribute="trailing" secondItem="w7N-LT-upu" secondAttribute="trailing" constant="10" id="p4t-z6-pcG"/>
                             <constraint firstItem="Xee-Hi-Jrl" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="45" id="pvS-tY-6O8"/>
                             <constraint firstItem="w7N-LT-upu" firstAttribute="trailing" secondItem="Xee-Hi-Jrl" secondAttribute="trailing" constant="45" id="qkd-uc-md4"/>
-                            <constraint firstItem="8Io-Bi-wnc" firstAttribute="bottom" secondItem="w7N-LT-upu" secondAttribute="bottom" id="uxQ-u4-h4E"/>
+                            <constraint firstAttribute="bottom" secondItem="hQg-IN-OU3" secondAttribute="bottom" constant="-10" id="rEH-p2-bAK"/>
+                            <constraint firstItem="8Io-Bi-wnc" firstAttribute="bottom" secondItem="w7N-LT-upu" secondAttribute="bottom" constant="-5" id="uxQ-u4-h4E"/>
+                            <constraint firstItem="hQg-IN-OU3" firstAttribute="leading" secondItem="w7N-LT-upu" secondAttribute="leading" constant="-10" id="yT6-vt-Gkm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7N-LT-upu"/>
                     </view>
@@ -231,6 +237,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="385" height="151"/>
         <image name="btnAnswe" width="1411" height="211"/>
         <image name="levelBtn" width="833" height="266"/>
         <image name="tvScreen" width="1192" height="986"/>

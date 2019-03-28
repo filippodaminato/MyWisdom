@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var CategoryPicker: UIPickerView!
+    @IBOutlet weak var btnSwitch: UISwitch!
     
     let difficulty = ["Easy","Medium","Hard"]
     var category_list : [Category]  = []
@@ -18,6 +19,17 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         populatePicker(url: "https://opentdb.com/api_category.php")
+        let defaults = UserDefaults.standard
+        if let res = defaults.string(forKey: defaultsKeys.music_key){
+            if res == "1"{
+                btnSwitch.isOn = true
+            }
+        }
+    }
+    
+    @IBAction func switchChange(_ sender: UISwitch) {
+        let defaults = UserDefaults.standard
+        defaults.set(sender.isOn, forKey: defaultsKeys.music_key)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

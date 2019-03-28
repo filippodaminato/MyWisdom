@@ -45,5 +45,6 @@ class Category: Decodable{
 struct defaultsKeys {
     static let cateogry_key = "cateogry_key"
     static let difficult_key = "difficult_key"
+    static let music_key = "music_key"
 }
 

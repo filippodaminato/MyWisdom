@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
 
@@ -33,6 +34,7 @@ class GameViewController: UIViewController {
     var currentQuestion:Question?
     var currentLevel = 1
     var btnAnsw : [UIButton] = []
+    var audioplayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
@@ -49,11 +51,14 @@ class GameViewController: UIViewController {
         btnAnsw = [btnAnsw1,btnAnsw2,btnAnsw3,btnAnsw4]
         lblLevel.text = "Level: "+String(currentLevel)
         getRequest()
+    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         deactivateConstrains()
         prepareToAnimation()
+        palyMusic()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -85,6 +90,38 @@ class GameViewController: UIViewController {
     
     @IBAction func btnBack(_ sender: Any) {
         self.dismiss(animated: true)
+    }
+    
+    func palyMusic() {
+        let defaults = UserDefaults.standard
+        if let res = defaults.string(forKey: defaultsKeys.music_key) {
+            if res == "1"{
+                do{
+                    audioplayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "background", ofType: "mp3")!))
+                    audioplayer.prepareToPlay()
+                    
+                }
+                catch{
+                    print(error)
+                }
+                
+                audioplayer.play()
+                audioplayer.numberOfLoops = 1000
+            }
+        }
+        else{
+            do{
+                audioplayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "background", ofType: "mp3")!))
+                audioplayer.prepareToPlay()
+                
+            }
+            catch{
+                print(error)
+            }
+            
+            audioplayer.play()
+        }
+        
     }
     
     func getRequest() {

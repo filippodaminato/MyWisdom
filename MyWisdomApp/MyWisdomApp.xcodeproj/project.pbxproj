@@ -13,6 +13,7 @@
 		DB548C0121F073B40083F897 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB548C0021F073B40083F897 /* Question.swift */; };
 		DBA459B521F724AB00E7C137 /* TravelingTypewriter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA459B421F7249200E7C137 /* TravelingTypewriter.ttf */; };
 		DBA459B721F7262900E7C137 /* Letters for Learners.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA459B621F7262500E7C137 /* Letters for Learners.ttf */; };
+		DBBF2AEC22437A7E00B9C21B /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBBF2AEB22437A7D00B9C21B /* background.mp3 */; };
 		DBD20FD82240CEAC00CD590E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD20FD72240CEAC00CD590E /* SettingsViewController.swift */; };
 		DBD20FDA2240CECF00CD590E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD20FD92240CECF00CD590E /* Settings.storyboard */; };
 		DBD20FDC2240CFF100CD590E /* StaticSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD20FDB2240CFF100CD590E /* StaticSettings.swift */; };
@@ -49,6 +50,7 @@
 		DB548C0021F073B40083F897 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DBA459B421F7249200E7C137 /* TravelingTypewriter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TravelingTypewriter.ttf; sourceTree = "<group>"; };
 		DBA459B621F7262500E7C137 /* Letters for Learners.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners.ttf"; sourceTree = "<group>"; };
+		DBBF2AEB22437A7D00B9C21B /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		DBD20FD72240CEAC00CD590E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DBD20FD92240CECF00CD590E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		DBD20FDB2240CFF100CD590E /* StaticSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticSettings.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DB548BF821F070800083F897 /* GameStoryboard.storyboard */,
+				DBBF2AEB22437A7D00B9C21B /* background.mp3 */,
 				DB548BFA21F070A20083F897 /* GameViewController.swift */,
 			);
 			path = GameView;
@@ -300,6 +303,7 @@
 				DBA459B521F724AB00E7C137 /* TravelingTypewriter.ttf in Resources */,
 				DBF7424421EA06580044F39B /* Assets.xcassets in Resources */,
 				DBF7424221EA06570044F39B /* Main.storyboard in Resources */,
+				DBBF2AEC22437A7E00B9C21B /* background.mp3 in Resources */,
 				DBA459B721F7262900E7C137 /* Letters for Learners.ttf in Resources */,
 				DB548BF921F070800083F897 /* GameStoryboard.storyboard in Resources */,
 				DBD20FDA2240CECF00CD590E /* Settings.storyboard in Resources */,
